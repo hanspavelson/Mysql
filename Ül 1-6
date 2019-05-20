@@ -1,0 +1,24 @@
+SELECT *
+FROM TAK18_Pavelson.yl21_Books
+WHERE release_date > 2010 AND type = "new"
+ORDER BY Title
+;
+
+SELECT COUNT(price) FROM bookstore.yl21_books
+GROUP BY type
+;
+
+select *
+from TAK18_Pavelson.yl21_Books
+Where release_date < 1970
+and type = "used"
+and price < 20
+;
+
+select count(*)
+from TAK18_Pavelson.yl21_Orders
+group by year(order_date)
+;
+
+select *
+from TAK18_Pavelson.yl21_Orders
